@@ -1,0 +1,132 @@
+html {
+    font-family: "Arial", Helvetica, sans-serif;
+    font-size-adjust: auto;
+    margin: 0;
+    padding: 0;
+}
+#page-grid {
+    padding-left: 200px;
+}
+#menu-lateral {
+    background: none repeat scroll 0 0 #2b462c;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0;
+    margin-left: -200px;
+    width: 200px;
+    position: fixed;
+    border: none;
+    height: 100%;
+}
+/*
+#menu-lateral {
+    background: none repeat scroll 0 0 #2b462c;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0;
+    margin-left: -200px;
+    width: 200px;
+    position: fixed;
+    border: none;
+    height: 100%;
+}
+*/
+
+#menu-lateral .pure-menu-open {
+    background: none;
+    border: none;
+}
+#menu-lateral .pure-menu-heading {
+    color: white;
+}
+#menu-lateral .pure-menu-heading {
+    font-weight: bold;
+}
+#menu-lateral a {
+    color: #c7c7c7;
+}
+#menu-lateral a: hover {
+    color: #292929;
+}
+#menu-lateral a: focus {
+    color: #292929;
+}
+.margin-container {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+.button-cancel {
+    background-color: #e66;
+    color: white;
+}
+.button-remove {
+    background: #ee4d4d;
+    background-image: url('icons/delete.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+}
+.button-remove:hover{
+    background-image: url('icons/delete.png');
+}
+.button-edit {
+    background: #5bc841;
+    background-image: url('icons/edit.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+}
+
+.button-edit:hover{
+    background-image: url('icons/edit.png');
+}
+
+.compact-table{
+    width: 100%;
+    white-space: nowrap;
+}
+
+.compact-table td{
+    max-width: 300px;
+    max-height: 10px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap; 
+}
+
+.centered-form{
+    text-align: center;
+    margin: 1em;
+}
+
+.center-box{
+    padding-top: 10%;
+}
+
+.search-form{
+    width:100%;
+}
+
+.search-box{
+    padding: 4px;
+    text-align: center;
+}
+
+#search-input, #search-button{
+    height: 40px;
+    font-size: 1em;
+}
+
+#search-input{
+    width: 80%;
+}
+
+#search-button{
+    width: 10%;
+    min-width: 100px;
+}
