@@ -4,12 +4,10 @@
 <head>
     <?php 
         include 'head.php'; 
-        include 'utils.php';
-        protector();
+        include_once 'control/login.CTRL.php';
+        LoginCTRL::redirect_if_not_logged("index.php");
     ?>
     <title>Atendimento</title>
-    <link rel="stylesheet" href="css/pure-min.css">
-    <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
@@ -19,36 +17,31 @@
                 <ul>
                     <li class="pure-menu-heading">Atendimento</li>
                     <li>
-                        <a href="main.php?id=list">Lista de visitantes</a>
-                    </li>
-                    <li>
-                        <a href="main.php?id=cad">Cadastro de visitante</a>
+                        <a href="#modal-cad-visitante">Cadastro de visitante</a>
                     </li>
                     <li class="pure-menu-heading">Administração</li>
                     <li>
                         <a href="#">Configurações</a>
                     </li>
                     <li>
-                        <a href="loggin.php?opt=0">Sair</a>
+                        <a href="login.php?exit=1">Sair</a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div id="page-content" class="pure-u-1">
-                <?php 
-                    if(isset($_GET['id'])){ 
-                        if($_GET['id']=="cad" ){ 
-                            include 'cad.php'; 
-                        }else if($_GET[ 'id']=="list" ){ 
-                            include 'list.php'; 
-                        }
-                    }else{ 
-                        include 'list.php'; 
-                    } 
-                ?>
+			<?php
+               	include 'list.php'; 
+            ?>
         </div>
     </div>
+    
+    <?php 
+    	include_once 'cadastro_visitante.php';
+		include_once 'visitas_visitante.php';
+    ?>
+    <script src="js/modal.js"></script><!-- JS for Modal -->
 </body>
 
 </html>

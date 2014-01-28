@@ -1,0 +1,321 @@
+@font-face {
+	font-family: 'Cumulus';
+	src:url('fonts/Cumulus.eot');
+	src:url('fonts/Cumulus.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Cumulus.woff') format('woff'),
+		url('fonts/Cumulus.ttf') format('truetype'),
+		url('fonts/Cumulus.svg#Cumulus') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'Cumulus';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="Cumulus-"] {
+*/
+.Cumulus-Cloud, .Cumulus-Cloud-Sun, .Cumulus-Cloud-Moon, .Cumulus-Cloud-Rain, .Cumulus-Cloud-Rain-Sun, .Cumulus-Cloud-Rain-Moon, .Cumulus-Cloud-Snow, .Cumulus-Cloud-Snow-Sun, .Cumulus-Cloud-Snow-Moon, .Cumulus-Cloud-Lightning, .Cumulus-Cloud-Lightning-Sun, .Cumulus-Cloud-Lightning-Moon, .Cumulus-Cloud-Wind, .Cumulus-Cloud-Raindrop, .Cumulus-Cloud-Raindrop-Sun, .Cumulus-Cloud-Raindrop-Moon, .Cumulus-Cloud-Snowflake, .Cumulus-Cloud-Snowflake-Moon, .Cumulus-Cloud-Snowflake-Moon-2, .Cumulus-Clouds, .Cumulus-Cloud-Add, .Cumulus-Cloud-Remove, .Cumulus-Cloud-Warning, .Cumulus-Cloud-Fog, .Cumulus-Cloud-Fog-Sun, .Cumulus-Cloud-Fog-Moon, .Cumulus-Cloud-2, .Cumulus-Cloud-Sun-2, .Cumulus-Cloud-Moon-2, .Cumulus-Cloud-Rain-2, .Cumulus-Cloud-Rain-Sun-2, .Cumulus-Cloud-Rain-Moon-2, .Cumulus-Cloud-Snow-2, .Cumulus-Cloud-Snow-Sun-2, .Cumulus-Cloud-Snow-Moon-2, .Cumulus-Cloud-Lightning-2, .Cumulus-Cloud-Lightning-Sun-2, .Cumulus-Cloud-Lightning-Moon-2, .Cumulus-Cloud-Wind-2, .Cumulus-Cloud-Raindrop-2, .Cumulus-Cloud-Raindrop-Sun-2, .Cumulus-Cloud-Raindrop-Moon-2, .Cumulus-Cloud-Snowflake-2, .Cumulus-Cloud-Snowflake-Sun, .Cumulus-Cloud-Snowflake-Moon-3, .Cumulus-Clouds-2, .Cumulus-Cloud-Add-2, .Cumulus-Cloud-Remove-2, .Cumulus-Cloud-Warning-2, .Cumulus-Cloud-Arrow-Up, .Cumulus-Coud-Arrow-Down, .Cumulus-Cloud-Sync, .Cumulus-Cloud-Reload, .Cumulus-Sun, .Cumulus-Sun-2, .Cumulus-Sunrise, .Cumulus-Sunset, .Cumulus-Sunset-2, .Cumulus-Sunset-3, .Cumulus-Rainbow, .Cumulus-Umbrella, .Cumulus-Raindrops, .Cumulus-Raindrop, .Cumulus-Sunglasses, .Cumulus-Sunglasses-2, .Cumulus-Moon, .Cumulus-Moon-2, .Cumulus-Moon-Stars, .Cumulus-Moon-Stars-2, .Cumulus-Full-Moon, .Cumulus-Crescent, .Cumulus-Half-Moon, .Cumulus-Gibbous-Moon, .Cumulus-Moon-3, .Cumulus-Gibbous-Moon-2, .Cumulus-Half-Moon-2, .Cumulus-Crescent-2, .Cumulus-Stars, .Cumulus-Thermometer, .Cumulus-Thermometer-Low, .Cumulus-Thermometer-Quarter-Full, .Cumulus-Thermometer-Half-Full, .Cumulus-Thermometer-Three-Quarter-Full, .Cumulus-Thermometer-Full, .Cumulus-Fahrenheit, .Cumulus-Celsius, .Cumulus-Lightning, .Cumulus-Snowflake, .Cumulus-Compass, .Cumulus-Compass-2, .Cumulus-Air-Sock, .Cumulus-Wind-Wheel, .Cumulus-Warning, .Cumulus-Tornado {
+	font-family: 'Cumulus';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.Cumulus-Cloud:before {
+	content: "\21";
+}
+.Cumulus-Cloud-Sun:before {
+	content: "\22";
+}
+.Cumulus-Cloud-Moon:before {
+	content: "\23";
+}
+.Cumulus-Cloud-Rain:before {
+	content: "\24";
+}
+.Cumulus-Cloud-Rain-Sun:before {
+	content: "\25";
+}
+.Cumulus-Cloud-Rain-Moon:before {
+	content: "\26";
+}
+.Cumulus-Cloud-Snow:before {
+	content: "\27";
+}
+.Cumulus-Cloud-Snow-Sun:before {
+	content: "\28";
+}
+.Cumulus-Cloud-Snow-Moon:before {
+	content: "\29";
+}
+.Cumulus-Cloud-Lightning:before {
+	content: "\2a";
+}
+.Cumulus-Cloud-Lightning-Sun:before {
+	content: "\2b";
+}
+.Cumulus-Cloud-Lightning-Moon:before {
+	content: "\2c";
+}
+.Cumulus-Cloud-Wind:before {
+	content: "\2d";
+}
+.Cumulus-Cloud-Raindrop:before {
+	content: "\2e";
+}
+.Cumulus-Cloud-Raindrop-Sun:before {
+	content: "\2f";
+}
+.Cumulus-Cloud-Raindrop-Moon:before {
+	content: "\30";
+}
+.Cumulus-Cloud-Snowflake:before {
+	content: "\31";
+}
+.Cumulus-Cloud-Snowflake-Moon:before {
+	content: "\32";
+}
+.Cumulus-Cloud-Snowflake-Moon-2:before {
+	content: "\33";
+}
+.Cumulus-Clouds:before {
+	content: "\34";
+}
+.Cumulus-Cloud-Add:before {
+	content: "\35";
+}
+.Cumulus-Cloud-Remove:before {
+	content: "\36";
+}
+.Cumulus-Cloud-Warning:before {
+	content: "\37";
+}
+.Cumulus-Cloud-Fog:before {
+	content: "\38";
+}
+.Cumulus-Cloud-Fog-Sun:before {
+	content: "\39";
+}
+.Cumulus-Cloud-Fog-Moon:before {
+	content: "\3a";
+}
+.Cumulus-Cloud-2:before {
+	content: "\3b";
+}
+.Cumulus-Cloud-Sun-2:before {
+	content: "\3c";
+}
+.Cumulus-Cloud-Moon-2:before {
+	content: "\3d";
+}
+.Cumulus-Cloud-Rain-2:before {
+	content: "\3e";
+}
+.Cumulus-Cloud-Rain-Sun-2:before {
+	content: "\3f";
+}
+.Cumulus-Cloud-Rain-Moon-2:before {
+	content: "\40";
+}
+.Cumulus-Cloud-Snow-2:before {
+	content: "\41";
+}
+.Cumulus-Cloud-Snow-Sun-2:before {
+	content: "\42";
+}
+.Cumulus-Cloud-Snow-Moon-2:before {
+	content: "\43";
+}
+.Cumulus-Cloud-Lightning-2:before {
+	content: "\44";
+}
+.Cumulus-Cloud-Lightning-Sun-2:before {
+	content: "\45";
+}
+.Cumulus-Cloud-Lightning-Moon-2:before {
+	content: "\46";
+}
+.Cumulus-Cloud-Wind-2:before {
+	content: "\47";
+}
+.Cumulus-Cloud-Raindrop-2:before {
+	content: "\48";
+}
+.Cumulus-Cloud-Raindrop-Sun-2:before {
+	content: "\49";
+}
+.Cumulus-Cloud-Raindrop-Moon-2:before {
+	content: "\4a";
+}
+.Cumulus-Cloud-Snowflake-2:before {
+	content: "\4b";
+}
+.Cumulus-Cloud-Snowflake-Sun:before {
+	content: "\4c";
+}
+.Cumulus-Cloud-Snowflake-Moon-3:before {
+	content: "\4d";
+}
+.Cumulus-Clouds-2:before {
+	content: "\4e";
+}
+.Cumulus-Cloud-Add-2:before {
+	content: "\4f";
+}
+.Cumulus-Cloud-Remove-2:before {
+	content: "\50";
+}
+.Cumulus-Cloud-Warning-2:before {
+	content: "\51";
+}
+.Cumulus-Cloud-Arrow-Up:before {
+	content: "\52";
+}
+.Cumulus-Coud-Arrow-Down:before {
+	content: "\53";
+}
+.Cumulus-Cloud-Sync:before {
+	content: "\54";
+}
+.Cumulus-Cloud-Reload:before {
+	content: "\55";
+}
+.Cumulus-Sun:before {
+	content: "\56";
+}
+.Cumulus-Sun-2:before {
+	content: "\57";
+}
+.Cumulus-Sunrise:before {
+	content: "\58";
+}
+.Cumulus-Sunset:before {
+	content: "\59";
+}
+.Cumulus-Sunset-2:before {
+	content: "\5a";
+}
+.Cumulus-Sunset-3:before {
+	content: "\5b";
+}
+.Cumulus-Rainbow:before {
+	content: "\5c";
+}
+.Cumulus-Umbrella:before {
+	content: "\5d";
+}
+.Cumulus-Raindrops:before {
+	content: "\5e";
+}
+.Cumulus-Raindrop:before {
+	content: "\5f";
+}
+.Cumulus-Sunglasses:before {
+	content: "\60";
+}
+.Cumulus-Sunglasses-2:before {
+	content: "\61";
+}
+.Cumulus-Moon:before {
+	content: "\62";
+}
+.Cumulus-Moon-2:before {
+	content: "\63";
+}
+.Cumulus-Moon-Stars:before {
+	content: "\64";
+}
+.Cumulus-Moon-Stars-2:before {
+	content: "\65";
+}
+.Cumulus-Full-Moon:before {
+	content: "\66";
+}
+.Cumulus-Crescent:before {
+	content: "\67";
+}
+.Cumulus-Half-Moon:before {
+	content: "\68";
+}
+.Cumulus-Gibbous-Moon:before {
+	content: "\69";
+}
+.Cumulus-Moon-3:before {
+	content: "\6a";
+}
+.Cumulus-Gibbous-Moon-2:before {
+	content: "\6b";
+}
+.Cumulus-Half-Moon-2:before {
+	content: "\6c";
+}
+.Cumulus-Crescent-2:before {
+	content: "\6d";
+}
+.Cumulus-Stars:before {
+	content: "\6e";
+}
+.Cumulus-Thermometer:before {
+	content: "\6f";
+}
+.Cumulus-Thermometer-Low:before {
+	content: "\70";
+}
+.Cumulus-Thermometer-Quarter-Full:before {
+	content: "\71";
+}
+.Cumulus-Thermometer-Half-Full:before {
+	content: "\72";
+}
+.Cumulus-Thermometer-Three-Quarter-Full:before {
+	content: "\73";
+}
+.Cumulus-Thermometer-Full:before {
+	content: "\74";
+}
+.Cumulus-Fahrenheit:before {
+	content: "\75";
+}
+.Cumulus-Celsius:before {
+	content: "\76";
+}
+.Cumulus-Lightning:before {
+	content: "\77";
+}
+.Cumulus-Snowflake:before {
+	content: "\78";
+}
+.Cumulus-Compass:before {
+	content: "\79";
+}
+.Cumulus-Compass-2:before {
+	content: "\7a";
+}
+.Cumulus-Air-Sock:before {
+	content: "\7b";
+}
+.Cumulus-Wind-Wheel:before {
+	content: "\7c";
+}
+.Cumulus-Warning:before {
+	content: "\7d";
+}
+.Cumulus-Tornado:before {
+	content: "\7e";
+}

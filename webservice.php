@@ -1,38 +1,38 @@
 <?php
-
-	include "persistence/dbinit.php";
+	include_once 'model/login.BO.php';
 	
-	$con=get_connection();
+	if(LoginBO::is_logged()){
+		$opt = $_GET['opt'];
 	
-	if(isset($_GET['action'])){
-		
-	}
-	
-	$query_string="select * from usuario";
-	$results=mysqli_query($con,$query_string);
-	
-	$return_array = array();
-	
-	$arr = array(
-		'nome' => $_POST["nome"],
-		'senha' => "tu",
-		'nome_completo' => "ele",
-		'tipo' => "nós"
-	);
-	
-	array_push($return_array,array_map(utf8_encode,$arr));
-		
-		
-	while ($row = mysqli_fetch_array($results)) {
-		$row_array = array(
-			'nome' => $row['nome'],
-			'senha' => $row['senha'],
-			'nome_completo' => $row['nome_completo'],
-			'tipo' => $row['tipo']
-		);
+		if ($opt == 'cad_visita') {
+			try{
+				include_once 'control/visitante.CTRL.php';
+				echo VisitanteCTRL::execute_save();
+			}catch(Exception $err){
+				echo $err->getMessage();
+			}
+		}else if($opt=='get_alertas'){
+			include_once 'persistence/connection.php';
+			$query="select * from alerta";
+			$result=Connection::get_connection()->query($query);
 			
-		array_push($return_array,array_map(utf8_encode,$row_array));
+			$array_results=array();
+			while($row=mysqli_fetch_assoc($result)){
+				$row_array=array(
+					'id'=>$row['id'],
+					'tipo'=>$row['tipo']
+				);
+				$array_results[$row['id']]=array_map('utf8_encode',$row_array);
+			}		
+			echo json_encode($array_results);
+		}else if($opt='get_visitantes'){
+			include_once 'control/visitante.CTRL.php';
+			VisitanteCTRL::findAll();
+		}else if($opt='get_visitante'){
+			
+		}
+	}else{
+		echo "{'id':'0','erro':'Usuário não está logado'}";
 	}
-		
-	echo json_encode($return_array);
 ?>
+		
